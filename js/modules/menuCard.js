@@ -42,7 +42,7 @@ function menuCard() {
     }
     
 
-    getResource('http://localhost:8888/Food/db.json')
+    getResource('https://neecsman.github.io/food/db.json')
         .then(data => {
             data.menu.forEach(({img, altimg, title, descr, price}) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
